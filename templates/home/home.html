@@ -1,0 +1,38 @@
+{% load staticfiles %}
+<html>
+	<head>
+		<title>Todolister</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- One -->
+					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+						<div class="content">
+							<h1>Todolister</h1>
+							<p class="major">A simple todolist tool !</p>
+							<ul class="actions vertical">
+								<li><a href="#first" class="button big wide smooth-scroll-middle">Get Started</a></li>
+							</ul>
+						</div>
+						<div class="image" >
+							<img style="max-width:100%, max-height:100%" src="{% static 'img/ancient_todolist.png' %}" alt="" />
+						</div>
+					</section>
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'js/jquery.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'js/skel.min.js' %}"></script>
+			<script src="{% static 'js/util.js' %}"></script>
+			<script src="{% static 'js/main.js' %}"></script>
+
+	</body>
+</html>
