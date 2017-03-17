@@ -6,5 +6,6 @@ urlpatterns = [
     # url(r'^$', 'todolister.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', 'home.views.home', name='home'),
+    url(r'^singup/', 'home.views.home', name='home'),
     url(r'^admin/', include(admin.site.urls)),
 ]
