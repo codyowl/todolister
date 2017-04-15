@@ -1,0 +1,20 @@
+.text-line {
+    background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    outline-offset: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #5079FF 1px;
+    padding: 9px 10px;
+}
+
+.signup-text{
+	color: #5079FF 
+}
+
+input{
+   text-align:center;
+}
