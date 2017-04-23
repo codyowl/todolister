@@ -1,6 +1,10 @@
 from django.shortcuts import render, render_to_response
 from accounts.forms import RegisterForm, LoginForm
 from django.template import RequestContext
+from accounts.forms import LoginForm
+from django.contrib.auth.models import User
+from django.contrib.auth import authenticate, login
+from django.http import HttpResponseRedirect, HttpResponse
 
 # Create your views here.
 def home(request, template="home/home.html"):

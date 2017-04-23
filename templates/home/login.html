@@ -48,6 +48,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
 									<input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+									{{ form.username.errors }}
 								</div>
 
 							</div>
@@ -59,6 +60,7 @@
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
 									<input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+									{{ form.password.errors }}
 
 								</div>
 							</div>
@@ -66,7 +68,7 @@
 						{% if errors %}
         					<ul>
             					{% for error in errors %}
-            						<li>{{ error }}</li>
+            						<li style="color: blue">{{ error }}</li>
             					{% endfor %}
         					</ul>
     					{% endif %}
