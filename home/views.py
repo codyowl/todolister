@@ -5,6 +5,7 @@ from accounts.forms import LoginForm
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponseRedirect, HttpResponse
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 def home(request, template="home/home.html"):
@@ -48,3 +49,7 @@ def user_login(request, template='home/login.html'):
         form = LoginForm()
         context = {'form': form}
         return render_to_response(template, context, context_instance=RequestContext(request))  
+
+@login_required
+def dashboard_home(request, template="dashboard/dashboard_home.html"):
+    return render_to_response(template)
